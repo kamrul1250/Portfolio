@@ -1,0 +1,344 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #a51c30;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.logo a {
+  all: unset;               /* Reset all anchor default styles */
+  cursor: pointer;          /* pointer cursor */
+  font-size: 1.8rem !important;    /* FORCE exact font size */
+  font-weight: bold !important;    /* FORCE exact weight */
+  color: white !important;          /* FORCE color same as logo */
+  display: inline-block;
+}
+
+
+.logo a:hover,
+.logo a:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ffdfdf;
+  outline: none;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus {
+  color: #ffdfdf;
+  outline: none;
+}
+
+/* Hero */
+.hero {
+  background-color: #eee;
+  padding: 4rem 2rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+body.dark .hero {
+  background-color: #1e1e1e;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+body.dark .hero p {
+  color: #aaa;
+}
+
+/* Section */
+.section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #a51c30;
+  padding-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+/* About Me */
+.skills {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.skills li {
+  list-style: disc inside;
+  margin-bottom: 0.5rem;
+}
+
+/* Portfolio */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  flex: 1 1 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(165, 28, 48, 0.5);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #555;
+}
+
+body.dark .project-card {
+  background: #222;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .project-card p {
+  color: #ccc;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #a51c30;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+.project-card a:hover,
+.project-card a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Contact form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #a51c30;
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-top: 1.2rem;
+  background-color: #a51c30;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #7d141f;
+  outline: none;
+}
+
+.required {
+  color: #a51c30;
+}
+
+/* Form status */
+#form-status {
+  margin-top: 0.7rem;
+  font-weight: 600;
+  color: #a51c30;
+}
+
+/* Footer */
+footer {
+  background-color: #a51c30;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #a51c30;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    padding-top: 2rem;
+    transition: right 0.3s;
+  }
+  nav ul.active {
+    right: 0;
+  }
+  nav ul li {
+    margin: 1rem 0;
+  }
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+html {
+  scroll-padding-top: 80px; /* Adjust if your header height is different */
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit; /* default color */
+  transition: color 0.3s;
+}
+
+.social-link:hover,
+.social-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Icons */
+.social-icon {
+  width: 20px;
+  height: 20px;
+  filter: none;
+  /* you can add some margin if you want */
+}
+
+/* Brand colors on text when hovered */
+.social-link.email:hover,
+.social-link.email:focus {
+  color: #D44638; /* Gmail red */
+}
+
+.social-link.linkedin:hover,
+.social-link.linkedin:focus {
+  color: #0077B5; /* LinkedIn blue */
+}
+
+.social-link.github:hover,
+.social-link.github:focus {
+  color: #333; /* GitHub black */
+}

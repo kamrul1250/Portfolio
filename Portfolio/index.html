@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md. Kamrul Hassan | Kamrul's Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="photo_6258050852929520986_y.jpg" type="image/x-icon" />
+
+</head>
+<body>
+  <header>
+<div class="logo"><a href="#">Md. Kamrul Hassan</a></div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">My Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore who I am and what I build.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Md. Kamrul Hassan</strong>, a passionate final-year Computer Science student at <strong>Daffodil International University</strong>, Dhaka, Bangladesh.</p>
+    <p>I specialize in web development and enjoy turning ideas into real-life applications.</p>
+    <p>Throughout my academic journey, I’ve explored domains like artificial intelligence, UI/UX design, and front-end development. I’m driven by building accessible and scalable web interfaces.</p>
+    <p>I’ve created projects such as a Matrimonial Biodata form and an interactive Calculator. I’m always learning and evolving my skillset.</p>
+    <ul class="skills">
+      <li>🌐 HTML, CSS, JavaScript</li>
+      <li>📱 Flutter & Mobile App Development</li>
+      <li>🧠 Machine Learning (beginner level)</li>
+      <li>🎯 Problem Solver & Quick Learner</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>My Portfolio</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>📄 Matrimonial Biodata</h3>
+        <p>A structured biodata form to collect partner preferences, personal info, and images.</p>
+        <a href="https://frabjous-marzipan-d5443a.netlify.app/" target="_blank" rel="noopener">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>🧮 Simple Calculator</h3>
+        <p>A clean JavaScript calculator capable of performing basic arithmetic operations.</p>
+        <a href="https://peaceful-yeot-9b5de8.netlify.app/" target="_blank" rel="noopener">Try Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form id="contact-form" novalidate>
+    <label for="name">Name <span class="required">*</span></label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email <span class="required">*</span></label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message <span class="required">*</span></label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+    <p id="form-status" role="alert"></p>
+  </form>
+
+  <!-- Social/contact links -->
+  <div class="social-links">
+  <a href="mailto:kamrulhassan1250@gmail.com" target="_blank" aria-label="Email" class="social-link email">
+    <img src="Gmail_Logo_512px.png" alt="Email" class="social-icon" /> Gmail
+  </a>
+  <a href="https://www.linkedin.com/in/kamrul-hassan-799254368" target="_blank" aria-label="LinkedIn" class="social-link linkedin">
+    <img src="icons8-linkedin-520.png" alt="LinkedIn" class="social-icon" /> LinkedIn
+  </a>
+  <a href="https://github.com/kamrul1250" target="_blank" aria-label="GitHub" class="social-link github">
+    <img src="icons8-github-512.png" alt="GitHub" class="social-icon" /> GitHub
+  </a>
+</div>
+
+</section>
+
+
+  <footer>
+    <p>© 2025 Md. Kamrul Hassan. Crafted with ❤️ in Dhaka, Bangladesh.
+</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
