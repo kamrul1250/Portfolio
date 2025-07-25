@@ -7,13 +7,14 @@ const projects = [
     techStack: { html: 40, css: 30, js: 30 },
     link: "Matrimonial_validated-main/index.html" // absolute path from root
   },
-  {
+ {
     title: "Simple Calculator",
     description: "A basic JavaScript calculator for arithmetic operations.",
     iconClass: "fas fa-calculator",
     techStack: { html: 25, css: 25, js: 50 },
-    link: "Calculator-main/Calculator-main/WebLabCalculator-20250624T134428Z-1-001/WebLabCalculator/index.html"
+    link: "Calculator-main/index.html"
   },
+
   {
     title: "Daraz Clone",
     description: "A website that clones the Daraz layout using HTML, CSS, and JavaScript.",
